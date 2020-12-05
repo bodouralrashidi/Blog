@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>New post</h2>
+<div style="background-color: white; border-radius: 20px; padding-left: 20px; padding-bottom: 20px;" >
+    <h2 style="padding-left: 20px;" >New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button  type="submit" class="save btn btn-default"  style="background-color: #6648b1d7; border-radius: 20px; color: white;">Save</button>
+    </div>
     </form>
 {% endblock %}
